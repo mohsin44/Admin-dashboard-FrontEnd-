@@ -1,0 +1,11 @@
+@import '../../Variables.scss';
+.footer{
+    color: $dark;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px;
+
+    >p>span{
+        color: $primary;
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../../Variables.scss';
+.btn {
+  padding: 8px 20px;
+  letter-spacing: 1.2px;
+    font-size: 14px;
+    border-radius: .5rem;
+    background: $primary;
+    color: white;
+    border: none;
+    cursor: pointer;
+  &:hover {
+      background: $hover;
+    }
+  }

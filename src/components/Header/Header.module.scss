@@ -1,0 +1,100 @@
+@import "../../Variables.scss";
+
+//variables
+:root{
+--fontSize:clamp(1.3rem,1.4vw,4rem);
+}
+// main header container
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  gap: 4vw;
+  z-index: 1;
+  padding: auto;
+  height: 9rem;
+}
+.header > * {
+  flex: 1;
+}
+
+// logo styling
+
+.logo {
+  font-size: var(--fontSize);
+  color: $primary;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+
+  > h2 {
+    font-weight: 600;
+  }
+  > h3 {
+    margin-right: .4rem;
+  }
+}
+
+// dynamic page title styles
+
+.page_title {
+  margin-left: 5rem;
+  font-weight: 600;
+  font-size: var(--fontSize);
+}
+
+// header search input
+
+.search_container {
+  display: flex;
+  width: clamp(10rem,35vw,51rem);
+  // margin: 0 10rem;
+
+  > input[type="text"] {
+    padding: 1rem;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    width: 47rem;
+    font-size: var(--fontSize);
+  }
+  input[type="text"]:focus {
+    outline: none;
+  }
+  input[type="text"]:focus::placeholder {
+    opacity: 40%;
+  }
+
+  > button[type="submit"] {
+    border: none;
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem 0 0 1rem;
+    cursor: pointer;
+  }
+  > button[type="submit"]:focus {
+    border: .2rem solid rgb(228, 228, 228);
+  }
+}
+
+.faSearch {
+  font-size: 1.4vw;
+  font-weight: 200;
+  opacity: 50%;
+}
+
+// rightend_container style
+
+.rightend_container {
+  margin:0 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  font-size: var(--fontSize);
+}
+
+
